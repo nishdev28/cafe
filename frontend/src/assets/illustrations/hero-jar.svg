@@ -1,0 +1,46 @@
+<svg viewBox="0 0 1200 750" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg2" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#F3DCC9"/>
+      <stop offset="100%" stop-color="#E7D6BC"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg2)"/>
+
+  <!-- soft shadow -->
+  <ellipse cx="600" cy="640" rx="260" ry="34" fill="#00000014"/>
+
+  <!-- hero jar centered -->
+  <g transform="translate(600,420)">
+    <rect x="-160" y="-260" width="320" height="420" rx="30" fill="#F1E7D8" stroke="#362A22" stroke-width="7"/>
+    <!-- layers -->
+    <rect x="-160" y="-260" width="320" height="70" fill="#6E3B1E"/>
+    <rect x="-160" y="-190" width="320" height="60" fill="#F1E7D8"/>
+    <rect x="-160" y="-130" width="320" height="70" fill="#8C5A2B"/>
+    <rect x="-160" y="-60" width="320" height="60" fill="#F1E7D8"/>
+    <rect x="-160" y="0" width="320" height="90" fill="#3A2418"/>
+    <rect x="-160" y="90" width="320" height="70" fill="#8C5A2B"/>
+    <!-- lid -->
+    <rect x="-186" y="-300" width="372" height="46" rx="14" fill="#362A22"/>
+    <rect x="-186" y="-300" width="372" height="14" rx="7" fill="#5C2414"/>
+    <!-- cocoa dusting dots -->
+    <circle cx="-90" cy="8" r="6" fill="#C98A3B"/>
+    <circle cx="20" cy="30" r="5" fill="#C98A3B"/>
+    <circle cx="90" cy="-6" r="7" fill="#C98A3B"/>
+    <!-- spoon -->
+    <g transform="translate(120,-40) rotate(24)">
+      <rect x="-8" y="0" width="16" height="150" rx="8" fill="#C98A3B"/>
+      <ellipse cx="0" cy="-18" rx="30" ry="42" fill="#C98A3B"/>
+      <ellipse cx="0" cy="-18" rx="20" ry="30" fill="#8C5A2B"/>
+    </g>
+  </g>
+
+  <!-- flanking beans + leaf accents -->
+  <g fill="#3A2418">
+    <ellipse cx="260" cy="600" rx="16" ry="9" transform="rotate(20 260 600)"/>
+    <ellipse cx="300" cy="620" rx="16" ry="9" transform="rotate(-25 300 620)"/>
+    <ellipse cx="230" cy="630" rx="16" ry="9" transform="rotate(55 230 630)"/>
+  </g>
+  <path d="M940 560c30-30 70-30 96-4-26 30-66 34-96 4z" fill="#4B5842"/>
+  <path d="M950 552c20 4 36 18 40 34" stroke="#F1E7D8" stroke-width="3" fill="none"/>
+</svg>

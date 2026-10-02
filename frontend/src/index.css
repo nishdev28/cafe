@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap");
+@import "tailwindcss";
+/*
+  Hearth & Grind theme tokens.
+  --color-purple / --color-yellow / --color-gray / --color-background are kept
+  as the existing semantic names used throughout the app, repointed to the
+  new warm, coffeehouse-and-hearth palette so every component restyles
+  automatically:
+    background  -> toasted linen (warm oat, not stark cream)
+    purple      -> ember red-brick (primary accent, was jewel purple)
+    yellow      -> toasted caramel (secondary accent, was gold)
+    gray        -> warm espresso ink (body text, was neutral grey)
+*/
+@theme {
+  --color-background: #f1e7d8;
+  --color-purple: #b5482a;
+  --color-yellow: #c98a3b;
+  --color-gray: #362a22;
+  --color-hearth: #5c2414;
+  --color-moss: #4b5842;
+  --font-top-luxury: "Fraunces", "Georgia", serif;
+  --font-body: "Work Sans", "Segoe UI", sans-serif;
+}
+
+body {
+  @apply font-body bg-background text-gray;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @apply font-top-luxury;
+  font-weight: 600;
+}
+
+.perspective {
+  perspective: 1200px;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s ease;
+  transform-style: preserve-3d;
+}
+
+.perspective:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+}
+
+@keyframes shop-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-shop-marquee {
+  animation: shop-marquee 40s linear infinite;
+}
+
+.animate-shop-marquee:hover {
+  animation-play-state: paused;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+

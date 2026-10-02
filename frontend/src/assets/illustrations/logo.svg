@@ -1,0 +1,12 @@
+<svg width="440" height="140" viewBox="0 0 440 140" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <!-- mark: flame cradled by a bean -->
+    <path d="M40 96c-13 0-23-10-23-23 0-9 5-15 9-21 2 5 5 8 8 9-1-8 2-16 9-22 0 9 4 15 10 19 5 3 9 8 9 15 0 13-10 23-22 23z"
+          fill="#B5482A"/>
+    <path d="M40 96c-9 0-16-7-16-16 0-5 2-9 5-13 1 3 3 5 5 6-1-5 1-10 5-14 0 6 3 10 6 12 4 2 6 6 6 9 0 9-7 16-11 16z"
+          fill="#C98A3B"/>
+    <ellipse cx="40" cy="70" rx="3" ry="9" fill="#5C2414" transform="rotate(20 40 70)"/>
+  </g>
+  <text x="82" y="66" font-family="Fraunces, Georgia, serif" font-size="40" font-weight="600" fill="#362A22">Hearth</text>
+  <text x="82" y="106" font-family="Fraunces, Georgia, serif" font-size="40" font-weight="600" fill="#B5482A">&amp; Grind</text>
+</svg>
